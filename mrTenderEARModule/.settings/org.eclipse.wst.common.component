@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="mrTenderEARModule-0.0.1-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="mrTenderJARModule-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/mrTenderJARModule/mrTenderJARModule">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mrTenderWARModule-0.0.1-SNAPSHOT.war" deploy-path="/" handle="module:/resource/mrTenderWARModule/mrTenderWARModule">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.faces-2.2.10.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/glassfish/javax.faces/2.2.10/javax.faces-2.2.10.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="primefaces-5.2.RC1.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/primefaces/primefaces/5.2.RC1/primefaces-5.2.RC1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="all-themes-1.0.10.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/primefaces/themes/all-themes/1.0.10/all-themes-1.0.10.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
