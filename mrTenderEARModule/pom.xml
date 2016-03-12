@@ -20,4 +20,40 @@
   		<type>war</type>
   	</dependency>
   </dependencies>
+ <!--  <build>
+  	<plugins>
+  		<plugin>
+  			<artifactId>maven-resources-plugin</artifactId>
+      		<version>2.7</version>
+      		<dependencies>
+            <dependency>
+                <groupId>org.apache.maven.shared</groupId>
+                <artifactId>maven-filtering</artifactId>
+                <version>1.3</version>
+            </dependency>
+          </dependencies>
+        	<executions>
+          		<execution>
+            		<id>copy-resources</id>
+            		<phase>deploy</phase>
+            		<goals>
+              			<goal>copy-resources</goal>
+            		</goals>
+            	<configuration>
+              	<outputDirectory>${user.home}/develop/wildfly-10.0.0.Final/standalone/deployments</outputDirectory>
+              	<resources>          
+               	 <resource>
+                	 <directory>${project.build.directory}</directory>
+                 <filtering>true</filtering>
+                 <includes>
+			          <include>**/*.ear</include>
+        		 </includes>
+                </resource>
+              </resources>              
+            </configuration>            
+          </execution>
+        </executions>
+  		</plugin>
+  	</plugins>
+  </build> -->
 </project>
