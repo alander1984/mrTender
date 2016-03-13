@@ -9,28 +9,18 @@
         <title>mrTender</title>
     </h:head>
     <h:body>
-    	<p:layout fullPage="true" resizeTitle="resize" style="background-color:#FFFFFF;">
-    		
-    		<p:layoutUnit position="north" size="68">
 				<div id="generalNavbar">
 	    			<ui:insert name="navbar" >
 	    			  <ui:include src="/templates/common/navbar.xhtml" />
 	    			</ui:insert>
     	    	</div>
-    		</p:layoutUnit>
     		
-    		<p:layoutUnit position="center">
     			<ui:insert name="content" />
-    		</p:layoutUnit>
     	
-    		<p:layoutUnit position="south" resizable="true" id="south">
 				<div id="generalFooter">
 	    			<ui:insert name="footer" >
 	    			  <ui:include src="/templates/common/footer.xhtml" />
 	    			</ui:insert>
     	    	</div>
-    	    </p:layoutUnit>	
-    	    
-        </p:layout>
     </h:body>
 </html>   
