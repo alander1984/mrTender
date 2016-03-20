@@ -12,7 +12,8 @@
   </modules>
    <properties>
         <primefaces-version>5.2.RC1</primefaces-version>
-    </properties>
+   	    <spring.version>3.1.4.RELEASE</spring.version> 
+   </properties>
    <dependencies>
         <!--JSF (include "jsf-api" and "jsf-impl")-->
         <dependency>
@@ -36,7 +37,21 @@
             <artifactId>all-themes</artifactId>
             <version>1.0.10</version>
         </dependency>
- 
+ 		<dependency> 
+       		<groupId>org.springframework.security</groupId> 
+       		<artifactId>spring-security-core</artifactId>           
+			<version>${spring.version}</version> 
+		</dependency>   
+		<dependency> 
+       		<groupId>org.springframework.security</groupId> 
+        	<artifactId>spring-security-web</artifactId>           
+			<version>${spring.version}</version> 
+		</dependency> 
+		<dependency> 
+        	<groupId>org.springframework.security</groupId> 
+       		<artifactId>spring-security-config</artifactId>           
+			<version>${spring.version}</version> 
+		</dependency>
     </dependencies>
  
     <!--Primefaces repository. Need to download themes-->
