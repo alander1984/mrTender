@@ -12,7 +12,7 @@
   </modules>
    <properties>
         <primefaces-version>5.2.RC1</primefaces-version>
-   	    <spring.version>3.1.4.RELEASE</spring.version> 
+       <spring.version>3.1.4.RELEASE</spring.version> 
    </properties>
    <dependencies>
         <!--JSF (include "jsf-api" and "jsf-impl")-->
@@ -37,22 +37,28 @@
             <artifactId>all-themes</artifactId>
             <version>1.0.10</version>
         </dependency>
- 		<dependency> 
-       		<groupId>org.springframework.security</groupId> 
-       		<artifactId>spring-security-core</artifactId>           
-			<version>${spring.version}</version> 
-		</dependency>   
-		<dependency> 
-       		<groupId>org.springframework.security</groupId> 
-        	<artifactId>spring-security-web</artifactId>           
-			<version>${spring.version}</version> 
-		</dependency> 
-		<dependency> 
-        	<groupId>org.springframework.security</groupId> 
-       		<artifactId>spring-security-config</artifactId>           
-			<version>${spring.version}</version> 
+<!-- Spring Security --> 
+<dependency> 
+       <groupId>org.springframework.security</groupId> 
+       <artifactId>spring-security-core</artifactId>           
+<version>${spring.version}</version> 
+</dependency>   
+<dependency> 
+       <groupId>org.springframework.security</groupId> 
+        <artifactId>spring-security-web</artifactId>           
+<version>${spring.version}</version> 
+</dependency> 
+<dependency> 
+        <groupId>org.springframework.security</groupId> 
+       <artifactId>spring-security-config</artifactId>           
+<version>${spring.version}</version> 
+</dependency>
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>1.0.0.Final</version>
 		</dependency>
-    </dependencies>
+	</dependencies>
  
     <!--Primefaces repository. Need to download themes-->
     <!--Репозиторий primefaces. Нужно указать, чтобы можно было скачивать различные темы оформления компонентов-->
