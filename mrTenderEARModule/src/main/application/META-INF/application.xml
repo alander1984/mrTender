@@ -10,4 +10,7 @@
       <context-root>/mrTenderWARModule</context-root>
     </web>
   </module>
+  <module>
+    <ejb>mrTenderJARModule-0.0.1-SNAPSHOT.jar</ejb>
+  </module>
 </application>
