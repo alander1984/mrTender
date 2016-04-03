@@ -11,7 +11,6 @@
     <module>mrTenderEARModule</module>
   </modules>
    <properties>
-        <primefaces-version>5.2.RC1</primefaces-version>
        <spring.version>3.1.4.RELEASE</spring.version> 
    </properties>
    <dependencies>
@@ -24,25 +23,24 @@
  
         <!--Primefaces library-->
         <!--Primefaces библиотеки-->
-        <dependency>
-            <groupId>org.primefaces</groupId>
-            <artifactId>primefaces</artifactId>
-            <version>${primefaces-version}</version>
-        </dependency>
  
-        <!--Primefaces themes-->
-        <!--Primefaces темы-->
-        <dependency>
-            <groupId>org.primefaces.themes</groupId>
-            <artifactId>all-themes</artifactId>
-            <version>1.0.10</version>
-        </dependency>
-<!-- 		<dependency>
-			<groupId>org.hibernate.javax.persistence</groupId>
-			<artifactId>hibernate-jpa-2.0-api</artifactId>
-			<version>1.0.1.Final</version>
-		</dependency> -->																																													
-		
+	<dependency>
+    	<groupId>org.webjars</groupId>
+    	<artifactId>bootstrap</artifactId>
+    	<version>3.2.0</version>
+    	<exclusions>
+       	  <exclusion>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+      	  </exclusion>
+    	</exclusions>
+	</dependency>
+ 
+	<dependency>
+    	<groupId>org.webjars</groupId>
+    	<artifactId>jquery</artifactId>
+    	<version>2.1.1</version>
+	</dependency>		
 		
 		<dependency>
     		<groupId>org.hibernate</groupId>
@@ -60,7 +58,7 @@
  
     <!--Primefaces repository. Need to download themes-->
     <!--Репозиторий primefaces. Нужно указать, чтобы можно было скачивать различные темы оформления компонентов-->
-    <repositories>
+<!--     <repositories>
         <repository>
             <id>prime-repo</id>
             <name>PrimeFaces Maven Repository</name>
@@ -68,7 +66,7 @@
             <layout>default</layout>
         </repository>
     </repositories>
-	
+	 -->
 
 
 </project>

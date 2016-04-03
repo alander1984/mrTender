@@ -1,26 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core"
-      xmlns:p="http://primefaces.org/ui" >
-	<h:head>
-        <title>mrTender</title>
-    </h:head>
-    <h:body>
-				<div id="generalNavbar">
-	    			<ui:insert name="navbar" >
-	    			  <ui:include src="/templates/common/navbar.xhtml" />
-	    			</ui:insert>
-    	    	</div>
-    		
-    			<ui:insert name="content" />
-    	
-				<div id="generalFooter">
-	    			<ui:insert name="footer" >
-	    			  <ui:include src="/templates/common/footer.xhtml" />
-	    			</ui:insert>
-    	    	</div>
-    </h:body>
-</html>   
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   xmlns:h="http://xmlns.jcp.org/jsf/html">
+	<head>
+		<TITLE>mrTender</TITLE>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
+	</head>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+    <!-- Нужно для абсолютного позиционирования элементов. Используется bootstrap --> 
+    <script src="tether/js/tether.min.js"></script>  
+    <script src="bootstrap/js/bootstrap.min.js"></script>  
+	<ui:insert name="content"/>
+</html>

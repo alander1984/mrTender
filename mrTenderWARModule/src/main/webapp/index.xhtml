@@ -1,14 +1,9 @@
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
    xmlns:ui="http://java.sun.com/jsf/facelets"
-   template="/templates/masterLayout.xhtml"
-   xmlns:h="http://xmlns.jcp.org/jsf/html">
-   
-  <ui:define name="menuLeft">
-    <ui:include src="/sections/login/menuLeft.xhtml"/>
-  </ui:define>
+   template="/templates/masterLayout.xhtml">
 
-  <ui:define name="rawContent"> 
-    <h:inputText value="#{place.streetAddress}" size="15"/>           
+  <ui:define name="content">
+    <h1>Hello</h1>
+  <button class="btn btn-primary">Тык-тык кнопка</button>
   </ui:define>
-     
 </ui:composition>
