@@ -11,7 +11,8 @@
     <module>mrTenderEARModule</module>
   </modules>
    <properties>
-       <spring.version>3.1.4.RELEASE</spring.version> 
+       <spring.version>3.2.8.RELEASE</spring.version> 
+       <spring.security.version>3.2.3.RELEASE</spring.security.version>
    </properties>
    <dependencies>
         <!--JSF (include "jsf-api" and "jsf-impl")-->
@@ -54,19 +55,41 @@
     		<version>5.1.0.Final</version>
 		</dependency>
 		
+		<dependency>
+   			<groupId>org.springframework.security</groupId>
+    		<artifactId>spring-security-web</artifactId>
+    		<version>4.0.4.RELEASE</version>
+  		</dependency>
+  		<dependency>
+    		<groupId>org.springframework.security</groupId>
+    		<artifactId>spring-security-config</artifactId>
+    		<version>4.0.4.RELEASE</version>
+  		</dependency>
+  		<dependency>
+    		<groupId>javax.servlet</groupId>
+   		 	<artifactId>javax.servlet-api</artifactId>
+   		 	<version>3.1.0</version>
+  		 	<scope>provided</scope>
+		</dependency>
+		<dependency>
+        	<groupId>org.springframework</groupId>
+       	 	<artifactId>spring-webmvc</artifactId>
+       	 	<version>4.0.4.RELEASE</version>
+    	</dependency>
+		
 	</dependencies>
  
     <!--Primefaces repository. Need to download themes-->
     <!--Репозиторий primefaces. Нужно указать, чтобы можно было скачивать различные темы оформления компонентов-->
-<!--     <repositories>
-        <repository>
+     <repositories>
+        <!-- <repository>
             <id>prime-repo</id>
             <name>PrimeFaces Maven Repository</name>
             <url>http://repository.primefaces.org</url>
             <layout>default</layout>
-        </repository>
+        </repository>-->
     </repositories>
-	 -->
+	 
 
 
 </project>
