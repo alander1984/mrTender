@@ -1,6 +1,7 @@
 package org.mrTender.users.model;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,6 +14,7 @@ import javax.persistence.Table;
 @Table(name = "users", catalog = "test")
 public class User {
 
+	private Integer id;
 	private String username;
 	private String password;
 	private boolean enabled;
@@ -28,6 +30,16 @@ public class User {
 	}
 
 	@Id
+	@Column(name="id")
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
+	
 	@Column(name = "username", unique = true, 
 		nullable = false, length = 45)
 	public String getUsername() {
@@ -57,5 +69,9 @@ public class User {
 		this.enabled = enabled;
 	}
 
+	public Set<UserRole> getUserRoles(){
+		return null;
+		
+	}
 
 }
