@@ -22,7 +22,7 @@
 	</context-param>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/springsecurity-servlet.xml</param-value>
+		<param-value>/WEB-INF/application-context.xml</param-value>
 	</context-param>
  
 	<filter>
@@ -38,6 +38,7 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	
  
 	<servlet>
 		<servlet-name>springsecurity</servlet-name>

@@ -16,4 +16,7 @@
 	  </authentication-provider>
 	</authentication-manager>
 	
+	<beans:bean id="TenderUserDetailsService" class="org.mrTender.users.service.TenderUserDetailsService">
+	</beans:bean>
+	
 </beans:beans>
