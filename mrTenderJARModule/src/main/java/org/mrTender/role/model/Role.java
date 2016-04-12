@@ -13,6 +13,7 @@ public class Role {
 	private String name;
 	
 	@Id
+	@Column(name="id")
 	public Integer getId() {
 		return id;
 	}
