@@ -4,6 +4,6 @@
 		http://www.springframework.org/schema/beans 
 		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
  
-    <bean class="org.mrTender.users.service.TenderUserDetailsService"/>
+    <bean id="TenderUserDetailsService" class="org1.mrTender.users.service.TenderUserDetailsService"/>
     
 </beans>
