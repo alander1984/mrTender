@@ -9,26 +9,26 @@
    	<!-- <http auto-config="true">
 		<intercept-url pattern="/common/**" access="hasRole('ROLE_USER')" />
 	</http>
-
+-->
 	<authentication-manager>
 	  <authentication-provider user-service-ref="TenderUserDetailsService">
 	   	<password-encoder hash="bcrypt" />
 	  </authentication-provider>
 	</authentication-manager>
-	-->
-	<!-- <beans:bean id="TenderUserDetailsService" class="org.mrTender.users.service.TenderUserDetailsService">
+	
+<!-- 	<beans:bean id="TenderUserDetailsService" class="org.mrTender.users.service.TenderUserDetailsService">
 	</beans:bean>-->
 	<http auto-config="true">
-		<intercept-url pattern="/admin**" access="ROLE_USER" />
+		<intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
 	</http>
 
-	<authentication-manager>
+	<!-- <authentication-manager>
 	  <authentication-provider>
 	    <user-service>
 		<user name="mkyong" password="123456" authorities="ROLE_USER" />
 	    </user-service>
 	  </authentication-provider>
-	</authentication-manager>
+	</authentication-manager>-->
 	
 	
 </beans:beans>

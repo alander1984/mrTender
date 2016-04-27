@@ -27,6 +27,20 @@
       		<artifactId>hibernate-core</artifactId>
       		<version>5.1.0.Final</version>
     </dependency>    
+    	<dependency>
+	<groupId>org.springframework.security</groupId>
+	<artifactId>spring-security-web</artifactId>
+	<version>4.0.4.RELEASE</version>
+	
+</dependency>
+    <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+    
   </dependencies>
   <description>																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										</description>
 </project>
