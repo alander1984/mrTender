@@ -13,11 +13,11 @@
   		<artifactId>mrTenderJARModule</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
-  	<dependency>
+   	<dependency>
   		<groupId>mrTenderParent</groupId>
   		<artifactId>mrTenderWARModule</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   		<type>war</type>
-  	</dependency>
+  	</dependency> 
   </dependencies>
 </project>

@@ -6,28 +6,27 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
-    <module>mrTenderJARModule</module>
-    <module>mrTenderWARModule</module>
-    <module>mrTenderEARModule</module>
-  </modules>
+    <!-- <module>mrTenderJARModule</module>-->
+    <module>mrTenderWARModule</module> 
+     <module>mrTenderEARModule</module>
+   </modules>
    <properties>
        <spring.version>4.2.5.RELEASE</spring.version> 
        <spring.security.version>4.2.5.RELEASE</spring.security.version>
    </properties>
    <dependencies>	
 		
-		<dependency>
-    		<groupId>org.hibernate</groupId>
-    		<artifactId>hibernate-core</artifactId>
-    		<version>5.1.0.Final</version>
-		</dependency>
-
-		<dependency>
-    		<groupId>org.hibernate</groupId>
-    		<artifactId>hibernate-entitymanager</artifactId>
-    		<version>5.1.0.Final</version>
-		</dependency>
-		
+    <dependency>
+      		<groupId>org.hibernate</groupId>
+      		<artifactId>hibernate-core</artifactId>
+      		<version>5.1.0.Final</version>
+    </dependency>   
+     <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.1.0.Final</version>
+        </dependency>
+ 	
 	</dependencies>
  
     <!--Primefaces repository. Need to download themes-->
